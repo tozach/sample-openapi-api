@@ -1,0 +1,19 @@
+   portals:
+     - ref: demo-portal
+       _external:
+         selector:
+           matchFields:
+             name: "Demo Portal"     # must match the Name from Part 1
+
+   apis:
+     - ref: user-api
+       name: "User API"               # swap in the real API name
+       description: "Published from GitHub spec during working session"
+       versions:
+         - ref: v1
+           version: "1.0.0"
+           spec: !file ./openapi.yaml   # path to the spec you cloned
+       publications:
+         - ref: new-api-publication
+           portal_id: !ref demo-portal
+           visibility: public

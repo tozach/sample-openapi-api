@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated_at": "2026-09-14T19:15:06.380535Z",
+    "generator": "kongctl/1.10.0",
+    "mode": "delete"
+  },
+  "changes": [
+    {
+      "id": "1:d:api:User API",
+      "resource_type": "api",
+      "resource_ref": "User API",
+      "resource_id": "9a034454-2b63-44cc-b90e-61092e76e6ab",
+      "action": "DELETE",
+      "fields": {
+        "name": "User API"
+      },
+      "namespace": "default"
+    }
+  ],
+  "execution_order": [
+    "1:d:api:User API"
+  ],
+  "execution_groups": [
+    [
+      "1:d:api:User API"
+    ]
+  ],
+  "summary": {
+    "total_changes": 1,
+    "by_action": {
+      "DELETE": 1
+    },
+    "by_resource": {
+      "api": 1
+    }
+  }
+}
